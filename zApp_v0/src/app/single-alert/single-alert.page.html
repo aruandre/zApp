@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/all-alerts"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alert details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding color="dark">
+  <ion-grid>
+    <ion-row>Description: {{loadedAlert.title}}</ion-row>
+    <ion-col></ion-col>
+    <ion-row>Age: {{loadedAlert.age}}</ion-row>
+    <ion-col></ion-col>
+    <ion-row>Severity: {{loadedAlert.severity}} </ion-row>
+    <ion-col></ion-col>
+    <ion-row>Acknowledged: {{loadedAlert.ack}}</ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" icon-start color="primary">
+      <ion-icon name="checkmark"></ion-icon>
+      Click to acknowledge
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
