@@ -1,5 +1,7 @@
 {
   "name": "zApp_v0",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

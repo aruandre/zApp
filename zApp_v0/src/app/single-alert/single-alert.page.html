@@ -20,8 +20,8 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
-    <ion-button expand="full" icon-start color="primary">
+  <ion-toolbar color="dark">
+    <ion-button expand="full" icon-start color="primary" (click)="dataService.ack()">
       <ion-icon name="checkmark"></ion-icon>
       Click to acknowledge
     </ion-button>

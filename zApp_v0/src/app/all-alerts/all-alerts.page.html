@@ -3,26 +3,14 @@
     <ion-title>
       All alerts
     </ion-title>
-    <!--
-      <ion-buttons slot="end">
-      <ion-button (click)="dropdown()">  dropdown todo 
-        <ion-icon name="more"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-item color="success">
-        <ion-select slot="end">
-            <ion-select-option value="description">Description</ion-select-option>
-            <ion-select-option value="severity">Severity</ion-select-option>
-            <ion-select-option value="duration">Duration</ion-select-option>
-      </ion-select>
-      </ion-item>-->
   </ion-toolbar>
 </ion-header>
 
 <ion-content no-padding color="dark">
   <ion-list>
     <ion-item *ngFor="let alert of dataService.alerts let i = index" [routerLink]="['./', alert.id]">
-       {{alert.title}} {{alert.age}}  
+       {{alert.title}}
+       <ion-item slot="end">{{alert.age}}</ion-item>  
     </ion-item>
   </ion-list>
 </ion-content>

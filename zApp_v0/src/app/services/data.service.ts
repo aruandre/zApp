@@ -38,6 +38,10 @@ export class DataService {
     };
   }
 
+
+  ack(){
+    console.log('ACK');
+  }
   /*get(id){
     return this.alerts.filter(x => x.title === id)[0];
   }*/
